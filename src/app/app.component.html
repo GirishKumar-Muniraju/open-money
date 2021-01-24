@@ -93,6 +93,10 @@
     margin-right: 1rem;
   }
 
+  .mat-slider-horizontal {
+    min-width: 100%;
+  }
+
   .started-button {
     top: 63px;
     left: 1622px;
@@ -107,6 +111,26 @@
     margin-right: 1rem;
   }
 
+  .secondary-div {
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    margin-left: 1rem;
+    background: transparent linear-gradient(90deg, #9f62c9 0%, #663399 100%) 0%
+      0% no-repeat padding-box;
+  }
+
+  .white-started-button {
+    top: 63px;
+    left: 1622px;
+    width: 166px;
+    height: 45px;
+    box-shadow: 0px 0px 20px #00000033;
+    border-radius: 24px;
+    opacity: 1;
+    color: #663399;
+    margin-right: 1rem;
+  }
   .toolbar {
     position: absolute;
     top: 0;
@@ -160,184 +184,6 @@
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 16px;
-  }
-
-  .card {
-    border-radius: 4px;
-    border: 1px solid #eee;
-    background-color: #fafafa;
-    height: 40px;
-    width: 200px;
-    margin: 0 8px 16px;
-    padding: 16px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.2s ease-in-out;
-    line-height: 24px;
-  }
-
-  .card-container .card:not(:last-child) {
-    margin-right: 0;
-  }
-
-  .card.card-small {
-    height: 16px;
-    width: 168px;
-  }
-
-  .card-container .card:not(.highlight-card) {
-    cursor: pointer;
-  }
-
-  .card-container .card:not(.highlight-card):hover {
-    transform: translateY(-3px);
-    box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
-  }
-
-  .card-container .card:not(.highlight-card):hover .material-icons path {
-    fill: rgb(105, 103, 103);
-  }
-
-  .card.highlight-card {
-    background-color: #1976d2;
-    color: white;
-    font-weight: 600;
-    border: none;
-    width: auto;
-    min-width: 30%;
-    position: relative;
-  }
-
-  .card.card.highlight-card span {
-    margin-left: 60px;
-  }
-
-  svg#rocket {
-    width: 80px;
-    position: absolute;
-    left: -10px;
-    top: -24px;
-  }
-
-  svg#rocket-smoke {
-    height: calc(100vh - 95px);
-    position: absolute;
-    top: 10px;
-    right: 180px;
-    z-index: -10;
-  }
-
-  a,
-  a:visited,
-  a:hover {
-    color: #1976d2;
-    text-decoration: none;
-  }
-
-  a:hover {
-    color: #125699;
-  }
-
-  .terminal {
-    position: relative;
-    width: 80%;
-    max-width: 600px;
-    border-radius: 6px;
-    padding-top: 45px;
-    margin-top: 8px;
-    overflow: hidden;
-    background-color: rgb(15, 15, 16);
-  }
-
-  .terminal::before {
-    content: "\2022 \2022 \2022";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 4px;
-    background: rgb(58, 58, 58);
-    color: #c2c3c4;
-    width: 100%;
-    font-size: 2rem;
-    line-height: 0;
-    padding: 14px 0;
-    text-indent: 4px;
-  }
-
-  .terminal pre {
-    font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
-    color: white;
-    padding: 0 1rem 1rem;
-    margin: 0;
-  }
-
-  .circle-link {
-    height: 40px;
-    width: 40px;
-    border-radius: 40px;
-    margin: 8px;
-    background-color: white;
-    border: 1px solid #eeeeee;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    transition: 1s ease-out;
-  }
-
-  .circle-link:hover {
-    transform: translateY(-0.25rem);
-    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
-  }
-
-  footer {
-    margin-top: 8px;
-    display: flex;
-    align-items: center;
-    line-height: 20px;
-  }
-
-  footer a {
-    display: flex;
-    align-items: center;
-  }
-
-  .github-star-badge {
-    color: #24292e;
-    display: flex;
-    align-items: center;
-    font-size: 12px;
-    padding: 3px 10px;
-    border: 1px solid rgba(27, 31, 35, 0.2);
-    border-radius: 3px;
-    background-image: linear-gradient(-180deg, #fafbfc, #eff3f6 90%);
-    margin-left: 4px;
-    font-weight: 600;
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
-      sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
-  }
-
-  .github-star-badge:hover {
-    background-image: linear-gradient(-180deg, #f0f3f6, #e6ebf1 90%);
-    border-color: rgba(27, 31, 35, 0.35);
-    background-position: -0.5em;
-  }
-
-  .github-star-badge .material-icons {
-    height: 16px;
-    width: 16px;
-    margin-right: 4px;
-  }
-
-  svg#clouds {
-    position: fixed;
-    bottom: -160px;
-    left: -230px;
-    z-index: -10;
-    width: 1920px;
   }
 
   /* Responsive Styles */
@@ -412,72 +258,95 @@
 
   <input type="hidden" #selection />
 
-  <!--   <div class="card-container">
-    <div
-      class="card card-small"
-      (click)="selection.value = 'component'"
-      tabindex="0"
-    >
-      <span>New Component</span>
-    </div>
+  <div style="display: flex">
+    <div>
+      <mat-card>
+        <mat-card-content>
+          <h2>Monthly Income</h2>
+          <p>{{ monthlyIncome }}</p>
 
-    <div
-      class="card card-small"
-      (click)="selection.value = 'material'"
-      tabindex="0"
-    >
-      <span>Angular Material</span>
+          <mat-slider
+            color="primary"
+            class="example-margin"
+            [disabled]="disabled"
+            [invert]="invert"
+            [max]="max"
+            [min]="min"
+            [step]="step"
+            [thumbLabel]="thumbLabel"
+            [tickInterval]="getSliderTickInterval()"
+            [(ngModel)]="monthlyIncome"
+            [vertical]="vertical"
+          >
+          </mat-slider>
+          <div style="display: flex; justify-content: space-between">
+            <h4>₹{{ min }}</h4>
+            <h4>₹{{ max }}</h4>
+          </div>
+        </mat-card-content>
+        <mat-card-content>
+          <h2>Monthly Expense</h2>
+          <p>{{ monthlyExpense }}</p>
+
+          <mat-slider
+            color="primary"
+            class="example-margin"
+            [disabled]="disabled"
+            [invert]="invert"
+            [max]="max"
+            [min]="min"
+            [step]="step"
+            [thumbLabel]="thumbLabel"
+            [tickInterval]="getSliderTickInterval()"
+            [(ngModel)]="monthlyExpense"
+            [vertical]="vertical"
+          >
+          </mat-slider>
+          <div style="display: flex; flex-direction: column">
+            <div>
+              <mat-form-field appearance="fill">
+                <mat-label>Repalyment Tenaure</mat-label>
+                <mat-select>
+                  <mat-option
+                    *ngFor="let month of months"
+                    [value]="month.value"
+                  >
+                    {{ month.viewValue }}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
+            <mat-slide-toggle color="primary" labelPosition="before"
+              >Do you have any existing loans?</mat-slide-toggle
+            >
+            <mat-form-field>
+              <mat-label>EMI of existing loan (optional)</mat-label>
+              <input matInput placeholder="In Rupees" />
+            </mat-form-field>
+          </div>
+        </mat-card-content>
+      </mat-card>
     </div>
-  </div> -->
+    <div>
+      <mat-card class="secondary-div">
+        <mat-card-content>
+          <diV>
+            <p>Loan Amount</p>
+            <p>₹ 1,00,000</p>
+          </diV>
+          <diV>
+            <p>Your EMI</p>
+            <p>₹ 15,000</p>
+          </diV>
+          <div>
+            <button class="white-started-button">Get Started</button>
+          </div>
+        </mat-card-content></mat-card
+      >
+    </div>
+  </div>
 
   <!-- Links -->
   <div class="card-container"></div>
-
-  <!-- Footer -->
-  <!-- <footer>
-    Love Angular?&nbsp;
-    <a href="https://github.com/angular/angular" target="_blank" rel="noopener">
-      Give our repo a star.
-      <div class="github-star-badge">
-        <svg
-          class="material-icons"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-        >
-          <path d="M0 0h24v24H0z" fill="none" />
-          <path
-            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
-          />
-        </svg>
-        Star
-      </div>
-    </a>
-    <a href="https://github.com/angular/angular" target="_blank" rel="noopener">
-      <svg
-        class="material-icons"
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-      >
-        <path
-          d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
-          fill="#1976d2"
-        />
-        <path d="M0 0h24v24H0z" fill="none" />
-      </svg>
-    </a>
-  </footer> -->
 </div>
-
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-
 <router-outlet></router-outlet>
